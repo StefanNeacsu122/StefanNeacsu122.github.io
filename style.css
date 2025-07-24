@@ -7,42 +7,39 @@
 
 body {
   font-family: 'Helvetica Neue', sans-serif;
-  background-color: #fdfaf7;
-  color: #3e2f2c;
   line-height: 1.6;
-  padding: 2rem;
+  padding: 0;
+  margin: 0;
 }
 
 header {
-  text-align: center;
-  margin-bottom: 3rem;
+  margin: 0;
+  padding: 0;
+  text-align: left;
 }
 
 header h1 {
   font-size: 3rem;
-  color: #5a3e36;
   letter-spacing: 1px;
 }
 
 .tagline {
   font-size: 1.2rem;
-  color: #7a5c4f;
 }
 
 h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #4a3b38;
 }
 
 .gallery .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
   gap: 1rem;
 }
 
 .gallery img {
-  width: 100%;
+  width: 50%;
   height: auto;
   border-radius: 6px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
@@ -55,22 +52,66 @@ h2 {
 
 .contact {
   margin-top: 3rem;
-  text-align: center;
+  text-align: left;
+  padding-left: 1rem;
 }
 
 .contact a {
-  color: #6a4c42;
   text-decoration: none;
   font-weight: bold;
+  color:#560358;
 }
 
 .contact a:hover {
-  text-decoration: underline;
+  color: #fc0463;
 }
 
 footer {
   margin-top: 4rem;
   text-align: center;
   font-size: 0.9rem;
-  color: #a88;
+  color: rgb(134, 134, 134);
+}
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #b4d8ff;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #e0d4ca;
+  height: 80px;
+}
+
+.logo {
+  margin-right: 2rem; /* Space between logo and buttons */
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  display: flex;
+  align-items: left;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #012a58;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #fc0463;
 }
