@@ -20,11 +20,10 @@ body {
 }
 
 @media (max-width: 600px) {
-  body {
-    font-size: 14px; /* smaller font for phones */
+  html {
+    font-size: 0.8rem; /* reduces base font size */
   }
 }
-
 .page-wrapper {
   display: flex;
   flex-direction: column;
