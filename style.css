@@ -18,6 +18,13 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+@media (max-width: 600px) {
+  body {
+    font-size: 14px; /* smaller font for phones */
+  }
+}
+
 .page-wrapper {
   display: flex;
   flex-direction: column;
