@@ -1,68 +1,118 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sepias Ink</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portofoliu — SepiasInk</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/logoWhite.jpg" />
 </head>
 
-<body>
-  <div class="page-wrapper">
-    <div class="content">
-      <header>
-        <nav class="navbar">
-
-          <div class="nav-left">
-            <a href="index.html">Acasa</a>
-            <a href="portfolio.html">Portofoliu</a>
-          </div>
-
-          <div class="nav-center">
-            <a href="index.html">
-              <img src="images/logo.png" alt="Sepias Ink Logo" height="40">
-            </a>
-          </div>
-
-          <div class="nav-right">
-            <a href="Post-Tattoo.html">Post-Tatuaj</a>
-            <a href="faq.html">Intrebari-Frecvente</a>
+<body class="dark">
+    <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/logoalt.png" alt="Stefan Tattoo Logo" class="nav-logo">
+      </a>
 
 
+      <button class="nav-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" /></svg>
+      </button>
 
-          </div>
-
-        </nav>
-      </header>
-
-      <h2 style="padding-left: 1rem;">Tatuaje completate</h2>
-        <div class="gallery">
-          <img src="images/tattoo1.jpg" alt="Tatuaj realizat - Design floral delicat" loading="lazy" class="zoomable" />
-          <img src="images/tattoo2.jpg" alt="Tatuaj realizat - Portret realist" loading="lazy" class="zoomable" />
-          <img src="images/tattoo3.jpg" alt="Tatuaj realizat - Design geometric" loading="lazy" class="zoomable" />
-          <img src="images/tattoo4.jpg" alt="Tatuaj realizat - Ilustrație artistică" loading="lazy" class="zoomable" />
-        </div>
-
-        <h2 style="padding-left: 1rem;">Flashuri</h2>
-        <div class="gallery">
-          <!-- Flash designs will be added here -->
-          <div style="grid-column: 1 / -1; text-align: center; padding: 3rem; color: #7a98bb; font-style: italic;">
-            Flashurile vor fi adăugate în curând...
-          </div>
-        </div>
-
-    <!-- Fullscreen overlay for image zoom -->
-    <div id="overlay" class="image-overlay">
-      <img id="overlay-img" src="" alt="Enlarged tattoo image" />
+      <nav id="primary-nav" class="nav">
+        <ul class="nav-list">
+          <li><a href="portfolio.html">Portofoliu</a></li>
+          <li><a href="Post-Tattoo.html">Post-Tatuaj</a></li>
+          <li><a href="faq.html">Intrebări-Frecvente</a></li>
+          <li class="cta"><a href="index.html#book">Rezervă-ți Locul</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
+
+  <main>
+    <section class="container section">
+      <h1 class="section-title">Portofoliu</h1>
+
+      <div class="grid portfolio-grid">
+        <!-- Example cards: add more or replace with server-side listing -->
+        <!-- Each article uses data-full for the lightbox -->
+        <article class="card" data-full="images/tattoo1.jpg">
+          <img src="images/tattoo1.jpg" alt="Tattoo1">
+          <div class="card-body">
+            <h3>Lucrare În Tuș Alb</h3>
+            <p class="tag">Zona Umăr-ului • Tehnică 3RL</p>
+          </div>
+        </article>
+
+        <article class="card" data-full="images/tattoo2.jpg">
+          <img src="images/tattoo2.jpg" alt="Tatto2">
+          <div class="card-body">
+            <h3>Shading Realist</h3>
+            <p class="tag">Zona Piept-ului • Tehnică 3RL</p>
+          </div>
+        </article>
+
+        <article class="card" data-full="images/tattoo3.jpg">
+          <img src="images/tattoo3.jpg" alt="Tatto3">
+          <div class="card-body">
+            <h3>Shading Realist</h3>
+            <p class="tag">Zona Omoplatul-ui • Tehnică 3RL</p>
+          </div>
+        </article>
+
+        <article class="card" data-full="images/tattoo4.jpg">
+          <img src="images/tattoo4.jpg" alt="Tatto4">
+          <div class="card-body">
+            <h3>Shading Realist</h3>
+            <p class="tag">Zona Piept-ului • Tehnică 3RL</p>
+          </div>
+        </article>
+
+        <article class="card" data-full="images/tattoo5.jpg">
+          <img src="images/tattoo5.jpg" alt="Tatto5">
+          <div class="card-body">
+            <h3>Shading Realist</h3>
+            <p class="tag">Zona Antebraț-ului • Tehnică 3RL</p>
+          </div>
+        </article>
+
+
+
+      </div>
+    </section>
+
+    <section id="flash" class="container section">
+      <h1 class="section-title">Flash-uri</h1>
+
+      <div class="grid portfolio-grid">
+        <!-- Example cards: add more or replace with server-side listing -->
+        <!-- Each article uses data-full for the lightbox -->
+        <article id=”flash” class="card" data-full="">
+          <img src="" alt="flash1">
+          <div class="card-body">
+            <h3>price</h3>
+            <p class="tag">size</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Modal / Lightbox -->
+    <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog">
+      <button class="lb-close" aria-label="Close">✕</button>
+      <button class="lb-prev" aria-label="Previous">‹</button>
+      <div class="lb-stage"><img src="" alt=""></div>
+      <button class="lb-next" aria-label="Next">›</button>
     </div>
-    <footer class="site-footer">
-      <p>© 2025 Sepias Ink</p>
-    </footer>
-  </div>
+  </main>
+
+  <script src="script.js" defer></script>
 </body>
 
 </html>

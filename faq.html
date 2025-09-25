@@ -1,67 +1,64 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sepias Ink</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Intrebari-Frecvente — SepiasInk</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logoWhite.jpg" />
 </head>
 
-<body>
-    <div class="page-wrapper">
-        <div class="content">
-            <header>
-                <nav class="navbar">
-
-                    <div class="nav-left">
-                        <a href="index.html">Acasa</a>
-                        <a href="portfolio.html">Portofoliu</a>
-                    </div>
-
-                    <div class="nav-center">
-                        <a href="index.html">
-                            <img src="images/logo.png" alt="Sepias Ink Logo" height="40">
-                        </a>
-                    </div>
-
-                    <div class="nav-right">
-                        <a href="Post-Tattoo.html">Post-Tatuaj</a>
-                        <a href="faq.html">Intrebari-Frecvente</a>
+<body class="dark">
+    <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/logoalt.png" alt="Stefan Tattoo Logo" class="nav-logo">
+      </a>
 
 
+      <button class="nav-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" /></svg>
+      </button>
 
-                    </div>
-
-                </nav>
-            </header>
-            <section class="faq">
-                <h1>O să doară tatuajul?</h1>
-                <p>Tatuajele nu sunt dureroase insa depinde de toleranta individului si de zona tatuata.</p>
-
-                <h1>Cât durează o sesiune?</h1>
-                <p>In functie de complexitatea tatuajului, o sesiune poate dura aproximativ
-                    4-5 ore.
-                </p>
-
-                <h1>Cât durează să se vindece un tatuaj?</h1>
-                <p>Tatuajul este vindecat complet dupa 6 luni.</p>
-
-                <h1>Care este prețul unui tatuaj?</h1>
-                <p>Costul tatuajului variază în funcție de complexitatea și mărimea acestuia. Pentru o estimare precisă, vă rugăm să ne contactați cu detalii despre designul dorit.</p>
-                
-                <h1>Pot să aduc propriul design?</h1>
-                <p>Desigur! Încurajăm clienții să aducă propriile idei și designuri. Putem lucra împreună pentru a adapta designul la stilul nostru și la zona dorită.</p>
-                
-                <h1>Ce vârstă trebuie să am pentru a-mi face un tatuaj?</h1>
-                <p>Vârsta minimă legală pentru tatuaje în România este de 18 ani. Pentru minori între 16-18 ani este necesară acordul părinților și prezența acestora.</p>
-            </section>
-        </div>
-        <footer class="site-footer">
-            <p>© 2025 Sepias Ink</p>
-        </footer>
+      <nav id="primary-nav" class="nav">
+        <ul class="nav-list">
+          <li><a href="portfolio.html">Portofoliu</a></li>
+          <li><a href="Post-Tattoo.html">Post-Tatuaj</a></li>
+          <li><a href="faq.html">Intrebări-Frecvente</a></li>
+          <li class="cta"><a href="index.html#book">Rezervă-ți Locul</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
+
+    <main class="container section">
+         <section class="faq">
+                <h2>O să doară tatuajul?</h2>
+                <li>Tatuajele nu sunt dureroase însa depinde de toleranța individului și de zona tatuată.</li>
+
+                <h2>Cât durează o sesiune?</h2>
+                <li>În funcție de complexitatea tatuajului, o sesiune poate dura aproximativ
+                    4-5 ore.
+                </li>
+
+                <h2>Cât durează să se vindece un tatuaj?</h2>
+                <li>Tatuajul este vindecat aproximativ dupa 6 luni.</li>
+
+                <h2>Care este prețul unui tatuaj?</h2>
+                <li>Costul tatuajului variază în funcție de complexitatea și mărimea acestuia. Pentru o estimare precisă, vă rugăm să ne contactați cu detalii despre designul dorit.</li>
+                
+                <h2>Pot să aduc propriul design?</h2>
+                <li>Desigur! Încurajăm clienții să aducă propriile idei și designuri. Putem lucra împreună pentru a adapta designul la stilul nostru și la zona dorită.</li>
+                
+                <h2>Ce vârstă trebuie să am pentru a-mi face un tatuaj?</h2>
+                <li>Vârsta minimă legală pentru tatuaje în România este de 18 ani. Pentru minori între 16-18 ani este necesară acordul părinților și prezența acestora.</li>
+            </section>
+    </main>
+
+    <script src="script.js" defer></script>
 </body>
 
 </html>
