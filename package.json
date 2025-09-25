@@ -1,0 +1,13 @@
+{
+  "name": "sepias-ink-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website for Sepias Ink tattoo artist",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 3000",
+    "dev": "python3 -m http.server 3000"
+  },
+  "keywords": ["tattoo", "portfolio", "website"],
+  "author": "",
+  "license": "ISC"
+}
